@@ -176,11 +176,11 @@ header {
 }
 
 .advantages-element {
-    height: 100%;
     width: 30%;
 }
 
 .advantages-element-title {
+    min-height: 4.5rem;
     color: #fff;
     padding: 2.12rem 0 1.25rem 0;
     border-top: 1px solid #fff;
