@@ -191,22 +191,64 @@ header {
     margin: 0 0 7.75rem 0;
 }
 
+/*------ENTRY FORM CLASSES-------*/
 
-.scholarship-block {}
+.scholarship-block {
+    display: flex;
+    flex-direction: column;
+    padding: 6.25rem 0;
+}
 
-.scholarship-header {}
+.scholarship-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 3.12rem 0;
+}
+
+.scholarship-block .content-container {
+    display: flex;
+    flex-direction: column;
+}
 
 .scholarship-title {}
 
-.scholarship-subtitle {}
+.scholarship-subtitle {
+    max-width: 35%;
+    line-height: 1.56rem;
+    color: #626570;
+}
 
-.scholarship-content {}
+.scholarship-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
-.content-element {}
+.content-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.content-text {}
+.content-element:first-child {
+    align-self: flex-start;
+}
 
-.content-number {}
+.content-element:last-child {
+    align-self: flex-end;
+}
+
+.content-text {
+    color: #16295B;
+    margin: 0 2.25rem 0 0;
+}
+
+.content-number {
+    font-size: 6rem;
+    font-weight: 500;
+    line-height: 7rem;
+    color: #16295B;
+}
 
 .specialities-block {}
 
