@@ -325,7 +325,6 @@ header {
 .help-form-block {
     background-color: #16295B;
     padding: 5rem 0 2.81rem 0;
-    margin: 0 0 1.875rem 0;
 }
 
 .help-header {
@@ -351,7 +350,7 @@ header {
     opacity: 0.6;
 }
 
-.help-form input, button {
+.help-form input, .help-form button {
     padding: 1.375rem 0 1.375rem 1.43rem;
     font-weight: 400;
     font-size: 0.8rem;
@@ -383,18 +382,44 @@ header {
     font-size: 1.75rem;
     line-height: 2.43rem;
     opacity: 0.4;
-    padding: 0 3rem;
+    padding: 1.875rem 3rem;
 }
 
 /*------OR CLASSES-------*/
 
-.admissions-block {}
+.admissions-block {
+    max-width: 55%;
+    margin: 0 auto;
+    background-color: #16295B;
+    padding: 3.18rem 3.375rem 4.68rem;
+}
 
-.admissions-title {}
+.admissions-title {
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 1.43rem;
+    padding: 0 0 2.43rem 0;
+}
 
-.degrees {}
+.degrees {
+    display: flex;
+    justify-content: space-between;
+}
 
-.degree-item {}
+.degree-item {
+    width: 30%;
+    text-align: center;
+}
+
+.degree-item button {
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 1.31rem 0;
+}
+
 
 .left-side {}
 
