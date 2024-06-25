@@ -250,6 +250,7 @@ header {
 
 /*------ENTRY FORM CLASSES-------*/
 
+/*------SPECIALITIES CLASSES-------*/
 
 .specialities-block {
     padding: 6.25rem 0;
@@ -291,13 +292,23 @@ header {
     color: #BEBEBE;
 }
 
-.students-block {}
+/*------SPECIALITIES CLASSES-------*/
 
-.students-header {}
+.students-block {
+    padding: 6.25rem 0 9.375rem 0;
+}
+
+.students-header {
+    display: flex;
+    padding: 0 0 3.125rem 0;
+}
 
 .students-title {}
 
-.students-subtitle {}
+.students-subtitle {
+    width: 35%;
+    color: #626570;
+}
 
 .carousel {}
 
