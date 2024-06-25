@@ -50,6 +50,17 @@ h1 {
     line-height: 1.18rem;
 }
 
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+}
+
+main {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
 /*------COMMON CLASSES-------*/
 
 /*------HEADER CLASSES-------*/
@@ -88,11 +99,20 @@ header {
 /*------HEADER CLASSES-------*/
 
 .first-block {
+    background-image: url("images/Main-page/background.jpg");
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 6.68rem 29rem 0 29rem;
 
 }
+
 .main-title {
+    padding: 0 0 2.81rem 0;
 }
+
 .subtitle {
+    padding: 0 10rem 6.75rem 10rem;
 }
 .entry-form-block {
 }
