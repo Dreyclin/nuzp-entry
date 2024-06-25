@@ -98,6 +98,9 @@ header {
 
 /*------HEADER CLASSES-------*/
 
+
+/*------FIRST BLOCK CLASSES-------*/
+
 .first-block {
     background-image: url("images/Main-page/background.jpg");
     background-repeat: no-repeat;
@@ -114,119 +117,153 @@ header {
 .subtitle {
     padding: 0 10rem 6.75rem 10rem;
 }
-.entry-form-block {
+
+/*------HEADER CLASSES-------*/
+
+.form-flex {
+    display: flex;
+    flex-direction: column;
 }
-.entry-form {
+
+.entry-form input {
+    height: 2rem;
+    border: none;
+    border-bottom: 1px solid #265AA6;
+    padding: 0 0 1rem 0;
+    margin: 0 0 2.43rem 0;
 }
-.advantages-block {
+
+.entry-form input {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.06rem;
 }
-.advantages-element {
+
+.entry-form-title {
+    padding: 6.25rem 0 3.12rem 0;
+    color: #16295B;
 }
-.advantages-element-title {
+
+.entry-form button {
+    padding: 0.625rem 3rem;
+    border: none;
+    background-color: #265AA6;
+    border-radius: 50rem;
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.12rem;
+    font-weight: 400;
+    margin: 0 0 6.25rem 0;
 }
-.advantages-element-subtitle {
-}
-.scholarship-block {
-}
-.scholarship-header {
-}
-.scholarship-title {
-}
-.scholarship-subtitle {
-}
-.scholarship-content {
-}
-.content-element {
-}
-.content-text {
-}
-.content-number {
-}
-.specialities-block {
-}
-.specialities-header {
-}
-.specialities-title {
-}
-.specialities-subtitle {
-}
-.specialities {
-}
-.speciality {
-}
-.speciality-title {
-}
-.speciality-salary {
-}
-.students-block {
-}
-.students-header {
-}
-.students-title {
-}
-.students-subtitle {
-}
-.carousel {
-}
-.help-form-block {
-}
-.help-form-title {
-}
-.help-form-subtitle {
-}
-.help-form {
-}
-.or-block {
-}
-.line {
-}
-.or-text {
-}
-.admissions-block {
-}
-.admissions-title {
-}
-.degrees {
-}
-.degree-item {
-}
-.left-side {
-}
-.top-section {
-}
-.footer-text {
-}
-.footer-line {
-}
-.bottom-section {
-}
-.location-container {
-}
-.location-logo-container {
-}
-.location-logo {
-}
-.location-text {
-}
-.tel-numbers-container {
-}
-.tel-logo-container {
-}
-.tel-logo {
-}
-.tel-number {
-}
-.text {
-}
-.number {
-}
-.socials-container {
-}
-.social-logo {
-}
-.right-side {
-}
-.big-logo-container {
-}
-.big-logo {
-}
+
+.advantages-block {}
+
+.advantages-element {}
+
+.advantages-element-title {}
+
+.advantages-element-subtitle {}
+
+.scholarship-block {}
+
+.scholarship-header {}
+
+.scholarship-title {}
+
+.scholarship-subtitle {}
+
+.scholarship-content {}
+
+.content-element {}
+
+.content-text {}
+
+.content-number {}
+
+.specialities-block {}
+
+.specialities-header {}
+
+.specialities-title {}
+
+.specialities-subtitle {}
+
+.specialities {}
+
+.speciality {}
+
+.speciality-title {}
+
+.speciality-salary {}
+
+.students-block {}
+
+.students-header {}
+
+.students-title {}
+
+.students-subtitle {}
+
+.carousel {}
+
+.help-form-block {}
+
+.help-form-title {}
+
+.help-form-subtitle {}
+
+.help-form {}
+
+.or-block {}
+
+.line {}
+
+.or-text {}
+
+.admissions-block {}
+
+.admissions-title {}
+
+.degrees {}
+
+.degree-item {}
+
+.left-side {}
+
+.top-section {}
+
+.footer-text {}
+
+.footer-line {}
+
+.bottom-section {}
+
+.location-container {}
+
+.location-logo-container {}
+
+.location-logo {}
+
+.location-text {}
+
+.tel-numbers-container {}
+
+.tel-logo-container {}
+
+.tel-logo {}
+
+.tel-number {}
+
+.text {}
+
+.number {}
+
+.socials-container {}
+
+.social-logo {}
+
+.right-side {}
+
+.big-logo-container {}
+
+.big-logo {}
