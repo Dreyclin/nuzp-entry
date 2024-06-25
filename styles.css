@@ -63,8 +63,8 @@ h1 {
 }
 
 .line {
-    border: 1px solid black;
-    width: 50rem;
+    border-top: 1px solid black;
+    width: 35rem;
     display: inline-block;
     opacity: 0.4;
 }
@@ -320,9 +320,12 @@ header {
 
 /*------STUDENTS CLASSES-------*/
 
+/*------HELP CLASSES-------*/
+
 .help-form-block {
     background-color: #16295B;
     padding: 5rem 0 2.81rem 0;
+    margin: 0 0 1.875rem 0;
 }
 
 .help-header {
@@ -366,9 +369,24 @@ header {
     margin: 0 1rem 0 0;
 }
 
-.or-block {}
+/*------HELP CLASSES-------*/
 
-.or-text {}
+/*------OR CLASSES-------*/
+
+.or-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.or-text {
+    font-size: 1.75rem;
+    line-height: 2.43rem;
+    opacity: 0.4;
+    padding: 0 3rem;
+}
+
+/*------OR CLASSES-------*/
 
 .admissions-block {}
 
