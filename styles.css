@@ -387,9 +387,11 @@ header {
 
 /*------OR CLASSES-------*/
 
+/*------ADMISSIONS CLASSES-------*/
+
 .admissions-block {
     max-width: 55%;
-    margin: 0 auto;
+    margin: 0 auto 6.25rem;
     background-color: #16295B;
     padding: 3.18rem 3.375rem 4.68rem;
 }
@@ -420,43 +422,82 @@ header {
     padding: 1.31rem 0;
 }
 
+/*------ADMISSIONS CLASSES-------*/
 
-.left-side {}
+footer {
+    background-color: #F8F8F8;
+    padding: 6.75rem 0 3.31rem 0;
+}
 
-.top-section {}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-.footer-text {}
+.left-side {
+    width: 60%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
 
-.footer-line {}
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-.bottom-section {}
+.footer-text {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.18rem;
+}
 
-.location-container {}
+.footer-line {
+    border-top: 1px solid #265AA6;
+    width: 100%;
+}
 
-.location-logo-container {}
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+}
 
-.location-logo {}
+.location-container {
+    display: flex;
+    max-width: 25%;
+    gap: 0.8rem;
+}
 
-.location-text {}
+.location-text {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.18rem;
+}
 
-.tel-numbers-container {}
+.tel-container {
+    display: flex;
+    max-width: 25%;
+    gap: 0.8rem;
+}
 
-.tel-logo-container {}
+.text {
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
 
-.tel-logo {}
+.number {
+    font-size: 1rem;
+    font-weight: 400;
+}
 
-.tel-number {}
+.socials-container {
+    display: flex;
+    gap: 0.9rem;
+}
 
-.text {}
-
-.number {}
-
-.socials-container {}
-
-.social-logo {}
-
-.right-side {}
-
-.big-logo-container {}
-
-.big-logo {}
+.right-side {
+    width: 20%;
+}
