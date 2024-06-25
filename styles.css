@@ -210,8 +210,6 @@ header {
     flex-direction: column;
 }
 
-.scholarship-title {}
-
 .scholarship-subtitle {
     max-width: 35%;
     line-height: 1.56rem;
@@ -250,21 +248,48 @@ header {
     color: #16295B;
 }
 
-.specialities-block {}
+/*------ENTRY FORM CLASSES-------*/
 
-.specialities-header {}
 
-.specialities-title {}
+.specialities-block {
+    padding: 6.25rem 0;
+    background-color: #436236;
+}
 
-.specialities-subtitle {}
+.specialities-header {
+    display: flex;
+    padding: 0 0 3.12rem 0;
+}
 
-.specialities {}
+.specialities-title {
+    color: #fff;
+}
 
-.speciality {}
+.specialities-subtitle {
+    color: #fff;
+    opacity: 0.2;
+}
 
-.speciality-title {}
+.specialities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-.speciality-salary {}
+.speciality {
+    min-width: 30%;
+    border-top: 1px solid #fff;
+}
+
+.speciality-title {
+    padding: 2.12rem 0 1.25rem 0;
+    color: #fff;
+}
+
+.speciality-salary {
+    padding: 0 0 3.12rem 0;
+    color: #BEBEBE;
+}
 
 .students-block {}
 
