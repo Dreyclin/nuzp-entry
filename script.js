@@ -13,3 +13,12 @@ new Glide('.glide', {
     autoplay: 2000
   }).mount();
 
+
+ 
+
+  $(document).ready(function() {
+
+    $('#burger').on('click', () => {
+       $('#menu').toggleClass("visible");
+    });
+  });

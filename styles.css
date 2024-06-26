@@ -6,8 +6,16 @@ html {
     scroll-behavior: smooth;
 }
 
+.visible {
+    display: flex!important;
+}
+
 body {
     font-family: "Roboto", sans-serif;
+}
+
+.burger {
+    display: none;
 }
 
 .container {
@@ -561,8 +569,18 @@ footer .container {
         flex-direction: column;
     }
 
+    .logo-container {
+        justify-content: space-between;
+    }
+
     .navigation {
         flex-direction: column;
+        display: none;
+    }
+
+    .burger {
+        display: inline;
+        width: 2rem;
     }
 
     /* HEADER */
