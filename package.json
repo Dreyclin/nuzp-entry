@@ -1,0 +1,14 @@
+{
+  "name": "nuzp-ad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "owl.carousel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@glidejs/glide": "^3.6.1"
+  }
+}
