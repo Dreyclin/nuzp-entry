@@ -566,7 +566,10 @@ footer .container {
     /* HEADER */
 
     header {
+        max-width: 90%;
+        margin: 0 auto;
         flex-direction: column;
+        padding: 1.5rem 0 1.5rem 0;
     }
 
     .logo-container {
@@ -591,6 +594,8 @@ footer .container {
         width: 100%;
         padding: 6.68rem 0 3rem 0;
         text-align: center;
+        background-size: cover;
+        background-position: center;
     }
 
     .main-title {
@@ -628,7 +633,6 @@ footer .container {
     .scholarship-header {
         flex-direction: column;
         justify-content: center;
-        align-items: center;
     }
 
     .scholarship-subtitle {
