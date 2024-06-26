@@ -5,7 +5,11 @@ new Glide('.glide', {
     breakpoints: {
         320: {
             perView: 1
+        },
+        480: {
+            perView: 1
         }
-    }
+    },
+    autoplay: 2000
   }).mount();
 
