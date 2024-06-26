@@ -733,6 +733,10 @@ footer .container {
         align-items: center;
     }
 
+    .left-side {
+        width: 90%;
+    }
+
     .top-section {
         flex-direction: column;
         justify-content: flex-start;
