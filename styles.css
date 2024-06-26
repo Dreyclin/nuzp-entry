@@ -592,7 +592,7 @@ footer .container {
     
     .first-block {
         width: 100%;
-        padding: 6.68rem 0 3rem 0;
+        padding: 3rem 0 3rem 0;
         text-align: center;
         background-size: cover;
         background-position: center;
@@ -604,7 +604,7 @@ footer .container {
     }
 
     .subtitle {
-        padding: 0;
+        padding: 0 5rem;
         line-height: 1;
         font-size: 0.8rem;
     }
@@ -616,6 +616,10 @@ footer .container {
     .entry-form-block {
         width: 100%;
         text-align: center;
+    }
+
+    .entry-form-title {
+        padding: 3rem 0 3.12rem 0;
     }
 
     /* ENTRY FORM */
