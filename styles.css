@@ -140,7 +140,7 @@ header {
     height: 2rem;
     border: none;
     border-bottom: 1px solid #265AA6;
-    padding: 0 0 1rem 0;
+    padding: 1rem 0 1rem 0;
     margin: 0 0 2.43rem 0;
 }
 
@@ -538,13 +538,14 @@ footer .container {
 }
 
 @media (max-width: 320px), (max-width: 480px) {
-
     .container {
         min-width: 100%;
     }
+
     .logo {
         width: 200px;
     }
+
     .content-container {
         min-width: 90%;
     }
@@ -554,10 +555,23 @@ footer .container {
         line-height: 2rem;
     }
 
+    /* HEADER */
+
+    header {
+        flex-direction: column;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    /* HEADER */
+
     /* FIRST BLOCK */
+    
     .first-block {
         width: 100%;
-        padding: 6.68rem 8% 3rem 0;
+        padding: 6.68rem 4% 3rem 4%;
         text-align: center;
     }
 
@@ -679,6 +693,7 @@ footer .container {
 
     .admissions-block {
         margin: 0 auto 3.25rem;
+        max-width: 100%;
     }
 
     .degrees {
