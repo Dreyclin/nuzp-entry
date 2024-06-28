@@ -663,8 +663,9 @@ footer .container {
         width: 100%;
     }
 
-    .specialities-subtitle {
-        display: none;
+    .specialities-header {
+        flex-direction: column;
+        gap: 1rem;
     }
 
     .speciality {
