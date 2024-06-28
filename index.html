@@ -39,14 +39,15 @@
             <div class="entry-form-block" id="entry-form">
                 <div class="content-container">
                     <h3 class="entry-form-title second-title">Твій перший крок до успішного майбутнього!</h3>
-                    <form action="" class="entry-form">
+                    <form class="entry-form" id="entryForm">
                         <div class="form-flex">
-                            <input type="text" placeholder="Ім'я">
-                            <input type="tel" placeholder="Номер телефону">
-                            <input type="email" placeholder="Email (за бажанням)">
+                            <input type="text" placeholder="Ім'я" id="name" name="name" required>
+                            <input type="text" placeholder="Номер телефону" id="phone" name="phone" required>
+                            <input type="email" placeholder="Email (за бажанням)" id="email" name="email">
                         </div>
-                        <button type="submit">Відправити</button>
-
+                        <button type="button" id="entrySubmit">Відправити</button>
+                        <span class="error-message message" id="errorMessage">Заповніть усі поля</span>
+                        <span class="success-message message" id="successMessage">Форма відправлена. Дякуємо!</span>
                     </form>
                 </div>
             </div>
@@ -216,12 +217,14 @@
                             університету «Запорізька
                             політехніка», залиш свої контакти — ми зв’яєжемося з тобою та відповімо на запитання.</p>
                     </div>
-                    <form action="" class="help-form">
-                        <input type="text" placeholder="Ім'я">
-                        <input type="tel" placeholder="Телефон">
-                        <input type="email" placeholder="Електрона пошта">
-                        <button type="submit">Відправити</button>
+                    <form action="" class="help-form" id="helpForm">
+                        <input type="text" placeholder="Ім'я" name="name" id="helpName" required>
+                        <input type="tel" placeholder="Телефон" name="phone" id="helpPhone" required>
+                        <input type="email" placeholder="Електрона пошта (за бажанням)" name="email" id="helpEmail">
+                        <button type="submit" id="helpSubmit">Відправити</button>
                     </form>
+                    <span class="error-message message" id="errorMessageHelp">Заповніть усі поля</span>
+                    <span class="success-message message" id="successMessageHelp">Форма відправлена. Дякуємо!</span>
                     <p class="personal-agreement subtitle-text">Натискаючи «Відправити», ви надаєте згоду на збір,
                         обробку та використання персональних даних</p>
                 </div>

@@ -11,15 +11,15 @@ new Glide('.glide', {
         }
     },
     autoplay: 2000
-  }).mount();
+}).mount();
 
 
- 
 
-  $(document).ready(function() {
+
+$(document).ready(function () {
 
     $('#burger').on('click', () => {
-       $('#menu').toggleClass("visible");
+        $('#menu').toggleClass("visible");
     });
 
     function isElementInViewport(el) {
@@ -33,7 +33,7 @@ new Glide('.glide', {
     }
 
     function checkVisibility() {
-        $('.content-number[data-target]').each(function() {
+        $('.content-number[data-target]').each(function () {
             if (isElementInViewport(this) && !$(this).hasClass('counted')) {
                 $(this).addClass('counted');
                 var target = $(this).data('target');
@@ -42,7 +42,7 @@ new Glide('.glide', {
                 }, {
                     duration: 2000,
                     easing: 'swing',
-                    step: function(now) {
+                    step: function (now) {
                         $(this).text(Math.ceil(now));
                     }
                 });
@@ -54,12 +54,66 @@ new Glide('.glide', {
     checkVisibility();
 
     // Перевіряти видимість при прокручуванні
-    $(window).on('scroll', function() {
+    $(window).on('scroll', function () {
         checkVisibility();
     });
 
     // Перевіряти видимість при зміні розміру вікна
-    $(window).on('resize', function() {
+    $(window).on('resize', function () {
         checkVisibility();
     });
-  });
+
+    $('#entrySubmit').on('click', (e) => onEntryFormSubmit(e))
+
+    function onEntryFormSubmit() {
+        const entrySubmit = $('#entrySubmit');
+        const form = document.getElementById('entryForm');
+        const name = $("#name").val();
+        const telephone = $('#phone').val();
+        const errorMessage = $('#errorMessage');
+        const successMessage = $('#successMessage');
+
+        if (name.length === 0 || telephone.length === 0) {
+            errorMessage.css('display', 'block');
+            entrySubmit.css('margin', '0');
+        } else {
+            entrySubmit.hide();
+            errorMessage.hide();
+            successMessage.css('display', 'block');
+            const link = "https://script.google.com/macros/s/AKfycbzp7Yyipwc4x0Z9NiQgoB0dIE0EBw1GRUd6kTanrOwpnj9Z_mnHZwIb8zxX_YdOTy6L/exec";
+            
+            const data = new FormData(document.getElementById("entryForm"));
+            console.log(data)
+            form.reset();
+            fetch(link, { method: "post", body: data });
+        }
+    }
+
+    $('#helpSubmit').on('click', (e) => onHelpFormSubmit(e));
+
+    function onHelpFormSubmit(e) {
+        e.preventDefault();
+        const helpSubmit = $('#helpSubmit');
+        const form = document.getElementById('helpForm');
+        const name = $("#helpName").val();
+        const telephone = $('#helpPhone').val();
+        const errorMessage = $('#errorMessageHelp');
+        const successMessage = $('#successMessageHelp');
+
+        if (name.length === 0 || telephone.length === 0) {
+            errorMessage.css('display', 'block');
+            helpSubmit.css('margin', '0');
+        } else {
+            helpSubmit.hide();
+            errorMessage.hide();
+            successMessage.css('display', 'block');
+            const link = "https://script.google.com/macros/s/AKfycbzp7Yyipwc4x0Z9NiQgoB0dIE0EBw1GRUd6kTanrOwpnj9Z_mnHZwIb8zxX_YdOTy6L/exec";
+            
+            const data = new FormData(document.getElementById("helpForm"));
+            console.log(data)
+            form.reset();
+            fetch(link, { method: "post", body: data });
+        }
+    }
+
+});

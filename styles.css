@@ -76,6 +76,20 @@ h1 {
     opacity: 0.4;
 }
 
+.error-message {
+    color: red;
+    display: none;
+}
+
+.success-message {
+    color: green;
+    display: none;
+}
+
+.message {
+    padding: 2rem 0;
+}
+
 /*------COMMON CLASSES-------*/
 
 /*------HEADER CLASSES-------*/
@@ -427,7 +441,7 @@ header {
 /*------ADMISSIONS CLASSES-------*/
 
 .admissions-block {
-    max-width: 55%;
+    max-width: 100%;
     margin: 0 auto 6.25rem;
     background-color: #16295B;
     padding: 3.18rem 3.375rem 4.68rem;
