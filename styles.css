@@ -775,5 +775,9 @@ footer .container {
         display: none;
     }
 
+    .tel-container {
+        max-width: 100%;
+    }
+
     /* FOOTER */
 }
