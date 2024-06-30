@@ -17,11 +17,7 @@ new Glide('.glide', {
 
 
 $(document).ready(function () {
-
-    $('#burger').on('click', () => {
-        $('#menu').toggleClass("visible");
-    });
-
+    
     function isElementInViewport(el) {
         var rect = el.getBoundingClientRect();
         return (

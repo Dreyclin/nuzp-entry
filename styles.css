@@ -14,10 +14,6 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-.burger {
-    display: none;
-}
-
 .container {
     max-width: 95%;
     margin: 0 auto;
@@ -31,6 +27,10 @@ a {
     font-size: 1.12rem;
     font-weight: 400;
     line-height: 1.31rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 0.5rem;
 }
 
 h1 {
@@ -114,7 +114,8 @@ header {
 
 .navigation {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     gap: 1.87rem
 }
 
@@ -125,6 +126,7 @@ header {
 
 .nav-item:hover:not(.active) {
     color: #16295B;
+    cursor: pointer;
 }
 
 /*------HEADER CLASSES-------*/
@@ -582,8 +584,11 @@ footer .container {
     header {
         max-width: 90%;
         margin: 0 auto;
-        flex-direction: column;
         padding: 1.5rem 0 1.5rem 0;
+    }
+
+    .nav-item {
+        font-size: 0.9rem;
     }
 
     .logo-container {
@@ -592,12 +597,6 @@ footer .container {
 
     .navigation {
         flex-direction: column;
-        display: none;
-    }
-
-    .burger {
-        display: inline;
-        width: 2rem;
     }
 
     /* HEADER */
